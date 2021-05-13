@@ -1,0 +1,101 @@
+<%- include('header') -%>
+
+
+  <section class="section contact" data-section="section6">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>DEVIS PROFESSIONNEL</h2>
+          </div>
+        </div>
+        <div class="col-md-12">
+         <form id="contact" action="envoidevisprofessionnel" method="post" class="">
+            <div class="row">
+                <div class="col-md-6">
+                  <fieldset>
+                    <input name="nom" type="text" class="form-control" id="name" placeholder="Votre Nom *" required="" autocomplete="off">
+                  </fieldset>
+                </div>
+                <div class="col-md-6">
+                  <fieldset>
+                    <input name="prenom" type="text" class="form-control" placeholder="Votre Prénom *" required="" autocomplete="off">
+                  </fieldset>
+                </div>
+                <div class="col-md-6">
+                    <fieldset>
+                      <input name="adresse" type="text" class="form-control"  placeholder="Votre adresse *" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-md-6">
+                    <fieldset>
+                      <input name="codepostal" type="text" class="form-control" autocomplete="off" placeholder="Code Postal *" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-md-6">
+                    <fieldset>
+                      <input name="ville" type="text" class="form-control" autocomplete="off" placeholder="Ville *" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-md-6">
+                    <fieldset>
+                      <input name="telephone" type="number" class="form-control" autocomplete="off" placeholder="Téléphone *" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-md-12">
+                    <fieldset>
+                      <select name="traitement" id="" class="form-control">
+                          <option value="" selected>- Type de traitement -</option>
+                          <option value="blattes/cafards">Blattes/Cafards</option>
+                          <option value="souris">Souris</option>
+                          <option value="rat">Rat</option>
+                          <option value="punaise">Punaise</option>
+                          <option value="puce">Puces</option>
+                          <option value="abeilles">Abeilles</option>
+                          <option value="guepe">Guêpe</option>
+                          <option value="autre">Autre</option>
+                      </select>
+                    </fieldset>
+                  </div><br><br>
+                  <div class="col-md-12">
+                    <fieldset>
+                        <select name="chambre" id="" class="form-control">
+                            <option value="" selected>- Nombre de chambres -</option>
+                            <option value="10-19">de 10 à 19</option>
+                            <option value="20-29">de 20 à 29</option>
+                            <option value="30-39">de 30 à 39</option>
+                            <option value="40-59">de 40 à 59</option>
+                            <option value="60-99">de 60 à 99</option>
+                            <option value="100-200">de 100 à 200</option>
+                            <option value="plus">Au délà</option>
+                           
+                        </select>
+                    </fieldset>
+                  </div><br><br>
+              <div class="col-md-12">
+                <fieldset>
+                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Votre message..." required=""></textarea>
+                </fieldset>
+              </div>
+              <div class="col-md-6">
+                <fieldset>
+                  <button type="reset" id="form-submit" class="button">Annuler</button>
+                </fieldset> 
+              </div> 
+              <div class="col-md-6">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="button">Envoyer un message</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+      
+        </div>
+       
+      </div>
+    </div>
+  </section>
+
+  <!--    footer-->
+    
+  <%- include('footer') -%>
